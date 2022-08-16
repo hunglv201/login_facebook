@@ -43,14 +43,8 @@ import {
         autoLogin: false,
         providers: [
           {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider(
-              'google public key'
-            ),
-          },
-          {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider('facebook public key'),
+            provider: new FacebookLoginProvider('7c4a7a599e0d2781826921d6eb1ce7ed'),
           },
         ],
       } as SocialAuthServiceConfig,
