@@ -33,27 +33,7 @@ export class LoginComponent implements OnInit {
   }
 
   signInWithGoogle(): void {
-    this.authService.signIn(GoogleLoginProvider.PROVIDER_ID).then(
-      data => {
-        this.socialUser = data;
-        const tokenGoogle = new TokenDto(this.socialUser.idToken);
-        this.oauthService.google(tokenGoogle).subscribe(
-          res => {
-            this.tokenService.setToken(res.value);
-            this.isLogged = true;
-            this.router.navigate(['/']);
-          },
-          err => {
-            console.log(err);
-            this.logOut();
-          }
-        );
-      }
-    ).catch(
-      err => {
-        console.log(err);
-      }
-    );
+    return null;
   }
 
   signInWithFB(): void {
